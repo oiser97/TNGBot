@@ -9,17 +9,17 @@ const bot = new TelegramBot(token, { polling: true });
 
 // Pianifica i messaggi
 // Pianifica i messaggi per lunedì alle 10:00
-cron.schedule('12 15 * * 2', () => {
+cron.schedule('58 15 * * 2', () => {
     bot.sendMessage(chatId, 'Buongiorno! È lunedì alle 10:00.');
 });
 
 // Pianifica i messaggi per martedì alle 11:00
-cron.schedule('13 15 * * 2', () => {
+cron.schedule('59 15 * * 2', () => {
     bot.sendMessage(chatId, 'Buongiorno! È martedì alle 11:00.');
 });
 
 // Pianifica i messaggi per mercoledì alle 12:00
-cron.schedule('06 15 * * 2', () => {
+cron.schedule('00 16 * * 2', () => {
     bot.sendMessage(chatId, 'Buongiorno! È mercoledì alle 12:00.');
 });
 
